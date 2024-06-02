@@ -1,0 +1,72 @@
+/* estilos generales */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  height: 100vh;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: url(img/fondoCrono.jpg) no-repeat center center/cover;
+}
+
+.contenedor-principal {
+  width: 80vw;
+  max-width: 600px;
+  min-height: 350px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.66);
+  border-radius: 10px;
+}
+
+
+.contenedor-botones {
+  padding: 10px;
+}
+
+
+/* cronometro */
+
+#cronometro {
+  width: 100%;
+  font-size: 80px;
+  font-weight: bold;
+  user-select: none; /* para que el usuario no pueda seleccionar el texto */
+  font-family: "Barlow", sans-serif; 
+}
+
+
+/* botones */
+
+.boton {
+  width: 80px;
+  height: 80px;
+  font-size: 50px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+
+#boton-inicio-pausa.iniciar,
+#boton-inicio-pausa.iniciar i {
+  background-color: #08e008;
+}
+
+
+#boton-inicio-pausa.pausar,
+#boton-inicio-pausa.pausar i {
+  background-color: #ffdc00;
+}
+
+#boton-reiniciar {
+  background-color: red;
+}
